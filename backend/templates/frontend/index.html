@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Visualization Dashboard</h1>
+        
+        <div class="filters">
+            <select id="endYearFilter">
+                <option value="">Select End Year</option>
+            </select>
+            <select id="topicFilter">
+                <option value="">Select Topic</option>
+            </select>
+            <select id="sectorFilter">
+                <option value="">Select Sector</option>
+            </select>
+            <select id="regionFilter">
+                <option value="">Select Region</option>
+            </select>
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="intensityChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="likelihoodChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="relevanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
